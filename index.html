@@ -129,6 +129,12 @@
 				}
 			}
 
+			function drawNet(){
+				for(var i = 0; i<canvas.height; i+=40){
+					colorRect(canvas.width/2-1, i,2,20,'white');
+				}
+			}
+
 			function drawEverything(){
 
 				//sets blank black screen
@@ -145,6 +151,7 @@
 
 					return;
 				}
+				drawNet();
 				//draws the left paddle
 				colorRect(0,paddle1Y,PADDLE_THICKNESS,PADDLE_HEIGHT, 'white');
 
